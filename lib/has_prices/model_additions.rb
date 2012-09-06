@@ -87,6 +87,10 @@ module HasPrices
       ActiveSupport::OrderedHash[t]
     end
 
+    def form_prices
+      prices.length > 0 ? prices : prices.values
+    end
+
     def has_price?(currency_id)
       find_price(currency_id).present?
     end
