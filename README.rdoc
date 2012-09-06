@@ -1,0 +1,11 @@
+== has_prices
+
+This gem is very heavily inspired by the `has_translations` gem by Dmitry Polushkin that can be found here : https://github.com/dmitry/has_translations. I used it as a base for this gem.
+
+The goal of this gem is to provide a helper `has_prices` that defines helpers on ActiveRecord models associated to `model_name_prices` that store prices on a currency basis.
+
+Using it, you can then do `@my_instance.price` to get a price according to your I18n.locale settings.
+
+Send me a note if you're interested and I'll write a full HOW-TO.
+
+Copyright (c) 2012 [Anthony Alberto], released under the MIT licence
